@@ -1,6 +1,7 @@
-process.stdin.setEncoding('utf-8');
-process.stdout.write('Komendy działające w programie: /exit, /nodev, /syslang\n');
+var OSinfo = require('../modules/OSinfo');
 
+process.stdin.setEncoding('utf-8');
+process.stdout.write('Komendy działające w programie: /exit, /nodev, /syslang, /getosinfo\n');
 process.stdin.on('readable', function(){
 	var input = process.stdin.read();
 	if (input !== null){
@@ -15,9 +16,11 @@ process.stdin.on('readable', function(){
 			case '/nodev':
 				process.stdout.write('Node Version is: ' + process.versions.node +'\n')
 				break;
+			case '/getosinfo':
+				OSinfo.print();
+				break;
 			default: 
 				process.stderr.write('Wrong instruction!\n');
-				break;
 		}	
 	}
 })
