@@ -1,0 +1,23 @@
+{
+  "name": "nodetrening",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maciejduda1/Nodejs-training.git"
+  },
+  "author": "Maciej Duda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maciejduda1/Nodejs-training/issues"
+  },
+  "homepage": "https://github.com/maciejduda1/Nodejs-training#readme",
+  "description": "",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
