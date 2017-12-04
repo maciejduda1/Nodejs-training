@@ -1,4 +1,4 @@
-var OSinfo = require('../modules/OSinfo');
+var OSinfo = require('./modules/OSinfo');
 
 process.stdin.setEncoding('utf-8');
 process.stdout.write('Komendy działające w programie: /exit, /nodev, /syslang, /getosinfo\n');
@@ -17,6 +17,7 @@ process.stdin.on('readable', function(){
 				process.stdout.write('Node Version is: ' + process.versions.node +'\n')
 				break;
 			case '/getosinfo':
+				
 				OSinfo.print();
 				break;
 			default: 

@@ -1,20 +1,24 @@
 ﻿var os = require('os');
+var colors = require('colors');
 var timerSetup = require('./TimeConfig');
+
 
 function getOSinfo(){
 	var type = os.type();
 	var release = os.release();
+
 	if (type === 'Darwin'){
 		type = 'OSX';
 	} 
 	else if (type === 'Windows_NT') {
 		type = 'Windows';
 	}
-	console.log('System:', type);
-	console.log('Release:', release);
+
+	console.log('System:'.green, type);
+	console.log('Release:'.red, release);
 
 	var cpu = os.cpus()[0].model;
-	console.log(cpu);
+	console.log(colors.green(cpu));
 
 	var uptime = os.uptime();
 	console.log('Uptime: ~', timerSetup.time(uptime));
