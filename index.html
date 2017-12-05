@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			$(function () {
+    		$('[data-toggle="tooltip"]').tooltip()
+				})
+		</script>
+		<script>
+			$(function () {
+    		$('[data-toggle="popover"]').popover()
+				})
+		</script>
+		<title>Bootstrap page - Juventus Turyn</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="page-header">
+				<h1>Juventus Turyn <small>strona fanowska</small></h1>
+			</div>
+		</header>
+		<nav class="container-fluid">
+			<div class="container">
+				<div class="dropdown nav-button-1">
+					<button class="btn btn-primary" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span>Zawodnicy<span class="glyphicon glyphicon-align-center"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#overview">Kadra</a></li>
+						<li><a href="bramkarze.html">Bramkarze</a></li>
+						<li><a href="#">Obrońcy</a></li>
+						<li><a href="#">Pomocnicy</a></li>
+						<li><a href="#">Napastnicy</a></li>
+					</ul>
+  				</div>
+  				<div class="dropdown nav-button-1">
+					<button class="btn btn-primary" data-toggle="dropdown"><span class="glyphicon glyphicon-star"></span>Klub<span class="glyphicon glyphicon-align-center"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#trophys">Trofea</a></li>
+						<li><a href="#fixtures">Terminarz i Wyniki</a></li>
+					
+					</ul>
+  				</div>
+  				<div class="nav-button-1">
+  					<a href="#juve-carousel"><button class="btn btn-primary" type="button">
+  						<span class="glyphicon glyphicon-picture"></span>Galeria
+  					</button></a>
+  				</div>
+  				<div class="nav-button-1">
+  					<a href="#">
+  						<button class="btn btn-primary" type="button">
+  							<span class="glyphicon glyphicon-envelope"></span>Kontakt  	
+  						</button>
+  					</a>
+  				</div>
+  				<div class="dropdown nav-button-1">
+					<button class="btn btn-primary" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span>Social Media<span class="glyphicon glyphicon-align-center"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+  				</div>
+  			</div>
+  		</nav>
+  		<main>
+  			<section class="container">
+				<div id="juve-carousel" class="carousel slide" interval="1000" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#juve-carousel" data-slide-to:"1"></li>
+						<li data-target="#juve-carousel" data-slide-to:"2"></li>
+						<li data-target="#juve-carousel" data-slide-to:"3"></li>
+						<li data-target="#juve-carousel" data-slide-to:"4"></li>
+						<li data-target="#juve-carousel" data-slide-to:"5"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="http://www.juventus.com/media/images/galleries/2017/settembre/28-09-atalanta-juve-story/2008aDelPiero.variant1400x787.jpg">
+						</div>
+						<div class="item">
+							<img src="http://www.juventus.com/media/images/galleries/2017/settembre/30-09-best-of-settembre-02/best-of-settembre-70.variant1400x787.jpg">
+						</div>
+						<div class="item">
+							<img src="http://www.juventus.com/media/images/galleries/2017/settembre/23-09-juvetorino/04_GP1_2014_GALLERY.variant1400x787.jpg">
+						</div>
+						<div class="item">
+							<img src="http://www.juventus.com/media/images/galleries/2017/settembre/23-09-juvetorino/07_J028875_GALLERY.variant1400x787.jpg">
+						</div>
+						<div class="item">
+							<img src="http://www.juventus.com/media/images/galleries/2017/settembre/2609-allenamentochampions/all2609UCL10.variant1400x787.jpg">
+						</div>
+						<a class="left carousel-control" href="#juve-carousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    						<span class="sr-only">Previous</span>
+  						</a>
+  						<a class="right carousel-control" href="#juve-carousel" role="button" data-slide="next">
+    						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    						<span class="sr-only">Next</span>
+  						</a>
+					</div>
+				</div>  				
+  			</section>
+  			<section class="squad container" id="overview">
+  				<div class="row">
+  					<a href="bramkarze.html"><h1>Bramkarze</h1></a>
+  					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+  						<div class="thumbnail player">
+  							<img src="http://www.juventus.com/media/images/posati/stagione-2017-18/prima-squadra/501x752/_J025920_501x752.png">
+  							<p id="number">No. 1</p>
+  							<div class="caption">
+								<h3>Gianluigi<br>Buffon</h3>
+							</div>
+						</div>
+					</div>
+  					<div class="col-lg-2 col-md-3 col-sm-4  col-xs-6">
+  						<div class="thumbnail player">
+  							<img src="http://www.juventus.com/media/images/posati/stagione-2017-18/prima-squadra/501x752/_J025641_501x752.png">
+  							<p id="number">No. 16</p>
+  							<div class="caption">
+  								<h3>Carlo<br>Pinsoglio</h3>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-lg-2 col-md-3 col-sm-4  col-xs-6">
+  						<div class="thumbnail player">
+  							
+  								<img src="http://www.juventus.com/media/images/posati/stagione-2017-18/prima-squadra/501x752/_J025967_501x752.png">
+		  						<p id="number">No. 23</p>
+		  					
+  						<div class="caption">
+  							<h3>Wojciech<br>Szczęsny</h3>
+  						</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<a href="#"><h1>Obrońcy</h1></a>
+  					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+  						<div class="thumbnail player">
+  							<img src="http://www.juventus.com/media/images/posati/stagione-2017-18/prima-squadra/501x752/_J025832_501x752.png">
+  							<p id="number">No. 2</p>
+  							<div class="caption">
+								<h3>Matia<br>Di Sciglio</h3>
+							</div>
+						</div>
+					</div>
+  					<div class="col-lg-2 col-md-3 col-sm-4  col-xs-6">
+  						<div class="thumbnail player">
+  							<img src="http://www.juventus.com/media/images/posati/figurine/_J016719_501x752.png">
+  							<p id="number">No. 3</p>
+  							<div class="caption">
+  								<h3>Giorgio<br>Chiellini</h3>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-lg-2 col-md-3 col-sm-4  col-xs-6">
+  						<div class="thumbnail player">
+  							
+  								<img src="http://www.juventus.com/media/images/posati/figurine/_J016887_501x752.png">
+		  						<p id="number">No. 4</p>
+		  					
+  							<div class="caption">
+  								<h3>Medhi<br>Benatia</h3>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-lg-2 col-md-3 col-sm-4  col-xs-6">
+  						<div class="thumbnail player">
+  							
+  								<img src="http://www.juventus.com/media/images/posati/figurine/_J016787_501x702.png">
+		  						<p id="number">No. 15</p>
+		  					
+  							<div class="caption">
+  								<h3>Andrea<br>Barzagli</h3>
+  							</div>
+  						</div>
+  					</div>
+  					<div class="col-lg-2 col-md-3 col-sm-4  col-xs-6">
+  						<div class="thumbnail player">
+  							
+  								<img src="http://www.juventus.com/media/images/posati/stagione-2017-18/prima-squadra/501x752/_J010096_501x752.png">
+		  						<p id="number">No. 23</p>
+		  					
+  							<div class="caption">
+  								<h3>Benedikt<br>Howedes</h3>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+  			
+  			<section class="container" id="trophys">
+  				<div class="row">
+  					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+  						<div class="thumbnail">
+  							<h3>Scudetto <small> 35 tytułów</small></h3>
+  						<img src="http://www.juventus.com/pics/trophy/trophy_scudetto.png">
+  						</div>
+  					</div>
+  					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+  						<div class="thumbnail">
+  							<h3>Champions League  <small>2 zwycięstwa</small></h3>
+  							<a href="#"data-toggle="modal" data-target=".champion"><img src="http://www.juventus.com/pics/trophy/trophy_champions_league.png"></a>
+  							<div class="modal fade champion" tabindex="-1" role="dialog" aria-labelledby="champion-modal">
+  								<div class="modal-dialog modal-lg" role="document">
+    								<div class="modal-content">
+										<div class="modal-header">
+        									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        									<h4 class="modal-title" id="champion-modal">sezon 95/96</h4>
+      									</div>
+      									<div class="modal-body">
+      										<div class="row">
+      											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      												<h3>Group stage</h3>
+      												<p>After achieving Scudetto glory the previous season, Juventus gained safe passage into the Champions League, where they were placed in Group C alongside Borussia Dortmund, Steaua Bucharest and Rangers. Marcello Lippi’s men proceeded to storm stormed into the last eight with two matches to spare following four consecutive wins during which they found the back of the net 14 times and conceded just twice.</p>
+      											</div>
+      											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      												<h3>Quarter-final</h3>
+      												<p>On 6 March 1996, the Bianconeri were tasked with travelling to the Santiago Bernabeu for a blockbuster quarter-final against Spanish giants Real Madrid. Despite not really being at the races, Juve managed to escape with only a one-goal deficit established by Raúl González. Two weeks later, a capacity crowd at the Stadio delle Alpi bore witness to an impressive turnaround as goals from Del Piero and Padovano guided Lippi’s side to the required 2-0 scoreline.</p>
+      											</div>
+      											<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      												<h3>Semi-final</h3>
+      												<p>The first leg of Juve’s semi-final clash against French club Nantes took place at Turin’s Stadio delle Alpi, where the hosts made full use of the man advantage gained after Carotti’s sending off to score twice (Vialli and Jugovic) in the second period and take an imposing lead to the west of France.
+
+The Bianconeri seemed well in control of the reverse match and had established a 2-1 (4-1 on aggregate) lead by the 50 minute mark. However, two quick-fire goals put Nantes back in the contest an upset seemed to be on the cards in the dying stages but in the end, Vialli and Sousa’s goals proved enough for a 4-3 aggregate victory.</p>
+      											</div>
+      										</div>
+      										<div class="row">
+      											<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      												<h3>Final</h3>
+      												<p>Rome’s Stadio Olimpico was the venue chosen to host the 1996 Champions League final on 22 May between two giants of European football Juventus and Ajax.
+
+Lippi’s troops were straight in the driving seat and went ahead after Ravanelli latched onto the first real goalscoring opportunity. The Dutch side levelled proceedings through Litmanen just before the interval but that was to be the last goal from open play and after 120 minutes of physically and mentally draining action, a penalty shootout was needed to determine a winner.
+
+Ferrara, Pessotto and Padovano all displayed nerves of steel to net their respective penalties but then Jugovic stole the headlines with the winning strike which sealed trophy glory for the club. However, the undisputed hero of the night was Bianconeri goalkeeper Peruzzi, who pulled off two crucial penalty saves from Davids and Silooy.
+
+Final starting XI – Peruzzi; Torricelli, Vierchowod, Ferrara, Pessotto; Conte, Sousa, Deschamps; Ravanelli, Vialli, Del Piero.</p>
+      											</div>
+      										</div>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+  						</div>
+  					</div>
+  					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+  						<div class="thumbnail">
+  							<h3>Coppa Italia <small>12 zwycięstw</small></h3>
+  							<a href="#" data-toggle="modal" data-target=".coppa"><img src="http://www.juventus.com/pics/trophy/trophy_coppa_italia.png"></a>
+  							<div class="modal fade coppa" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  								<div class="modal-dialog modal-sm" role="document">
+    								<div class="modal-content">
+Three Coppa Italia in a row!
+First-half goals from Dani Alves and Leonardo Bonucci see Juventus east past Lazio and make history with a third consecutive Coppa Italia trophy, their 12th overall
+
+Juventus wrote yet another chapter of Italian football history at the Stadio Olimpico on Wednesday night as goals from Dani Alves and Leonardo Bonucci saw them cruise past Lazio to seal a third consecutive Coppa Italia crown, their 12th overall.
+
+In control throughout, the Bianconeri put one hand on the trophy within the first 25 minutes as Alves coolly volleyed home at the back post before Bonucci steered into the far corner both from Alex Sandro assists....
+    								</div>
+  								</div>
+							</div>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+  			
+  			
+  			
+  			<section class="container" id="fixtures">
+  				<div class="table-responisve">
+	  				<table class="table ">
+  						<thead>
+  							<tr>
+  								<th>Sezon 2017/2018</th>
+  							</tr>
+  							<tr>
+    							<th>Data</th>
+    							<th>Przeciwnik</th>
+    							<th>Wynik</th>
+    							<th>Rozgrywki</th>
+    						</tr>
+    					</thead>
+    					<tbody>
+    						<tr>
+    							<td>13.08.2017</td>
+    							<td>Juventus - Lazio</td>
+    							<td>
+    								<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" title="Strzelcy" data-content="17 min: xxx, 22 min: zzz, 44 min: ooo, 74 min: ppp, 80 min: popop">2 : 3</button>	    							
+    							</td>
+    							<td>Superpuchar Włoch</td>
+    						</tr>
+    						<tr>
+    							<td>19.08.2017</td>
+    							<td>Juventus - Cagliari</td>
+    							<td><button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" title="Strzelcy" data-content="17 min: xxx, 22 min: zzz, 44 min: ooo">3 : 0</button></td>
+	    						<td>Serie A</td>
+    						</tr>
+    					</tbody>
+  					</table>
+  			</section>
+  		</main>
+  		<footer>
+  			
+  			<div class="container">
+  				<!--<div class="row ">-->
+  				<!--	<div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-12">-->
+  				<!--		<h3>Zostaw nam wiadomość!</h3>-->
+  				<!--	</div>-->
+  				<!--</div>-->
+  				<div class="row row-flex">
+  					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 left-side">
+  						<div class="row">
+	  						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 s-align">
+	  						Adres:
+	  						</div>
+	  						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
+	  						Via Druento 175 <br>
+	  						10151 Torino (TO) <br>
+	  						Italy
+	  						</div>
+  						</div>
+  					</div>
+  					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 right-side">
+  						<h3>Zostaw nam wiadomość!</h3>
+  						<form class="form-horizontal">
+  							<div class="form-group">
+	  							<label for="inputEmail3" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">Twój e-mail</label>
+	  							<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+  									<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+  								</div>
+  							</div>
+  							<div class="form-group">
+  									<label for="textformcontact" class="col-lg-3 col-md-3 col-sm-3 col-xs-3 control-label">Twoja wiadomość</label>
+  								<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+  									<textarea class="form-control" rows="3" id="textformcontact" placeholder="Wiadomość"></textarea>
+  								</div>		
+ 							</div>
+ 							<div class="form-group">
+    							<div class="col-lg-offset-3 col-lg-9 col-md-offset-3 col-md-9 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
+      								<button type="submit" class="btn btn-default">Wyślij</button>
+    							</div>
+    						</div>
+  						</form>
+  					</div>
+  
+  				</div>
+  				<div class="row">
+  					<hr>
+  					<p>Maciej Duda 2017</p>
+            
+  				</div>
+  			</div>
+  		</footer>
+	</body>
+</html>
