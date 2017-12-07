@@ -25,14 +25,14 @@ fs.readFile('./text.txt', 'utf-8', function(err, data){
 */
 fs.readdir('./modules', function(err, files){
 	if (err) throw err;
-	console.log('W folderze modules znajdują się pliki: ' + files);
+	console.log('W folderze modules znajdują się pliki: \n' + files.map(function(item){return (item +'\n').green;}));
 	console.log('Zapisuję je w pliku: text.txt')
 	fs.writeFile('./text.txt', files, function(err, data){
 		if (err) throw err;
 		console.log('Zapisano!');
 		fs.readFile('./text.txt', 'utf-8', function(err, data){
 			console.log('Dane po zapisie w pliku text.txt:');
-			console.log(data);
+			data.toString().split(',').map(function(item){return console.log((item).green)});
 		});
 	});
 });
